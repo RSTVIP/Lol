@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(wallpaper.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .wrapper {
+            width: 420px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            color: #fff;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+
+        img {
+            width: 250px;
+            margin-top: 4%;
+            margin-bottom: 3%;
+            margin-left: 14%;
+        }
+
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .wrapper h2 {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+        }
+
+        .input-box input::placeholder {
+            color: #fff;
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+
+        .remember-forget {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+
+        .remember-forget label input {
+            accent-color: #ffff;
+            margin-right: 3px;
+        }
+
+        .remember-forget a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .remember-forget a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            width: 100%;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .register-link {
+            font-size: 14.5px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+
+        .register-link p a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .register-link p a:hover {
+            text-decoration: underline;
+        }
+
+        #Botten {
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+        }
+
+        button:active {
+            width: 155px;
+            height: 32px;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 15px 100px;
+            background: transparent;
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 29px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 17px;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            margin-left: 40px;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #fff;
+            transition: .3s;
+        }
+
+        .navbar a:hover::before {
+            width: 100%;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            font-size: 22px;
+            background: transparent;
+            color: #ffffff;
+            width: 100%;
+            backdrop-filter: blur(20px);
+            justify-content: center;
+            align-items: center;
+        }
+
+        p2 {
+            position: fixed;
+            bottom: 0;
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <a href="#" class="logo">Online Programming Club</a>
+        <nav class="navbar">
+            <a href="#">Home page</a>
+            <a href="#">About the club</a>
+            <a href="#">Contact us</a>
+            <a href="#">What's new</a>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
+    <div class="wrapper">
+        <form action="">
+            <img src="logo.png" alt="kku logo">
+            <h1>Login page</h1>
+            <h2>Welcome!</h2>
+            <div class="input-box">
+                <input type="text" placeholder="Email" required id="Email1">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required id="pass1">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forget">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot your password?</a>
+            </div>
+            <button type="submit" id="Botten" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register now!</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p2>&copy; Omar Ali</p2>
+    </footer>
+
+    <script src="Java.js"></script>
+</body>
+</html>
